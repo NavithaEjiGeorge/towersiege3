@@ -295,7 +295,7 @@ function keyPressed(){
 	sling.attach(dragger.body)}
 }
  async function getBackgroundImg(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata")
     var jsonresponse = await response.json()
     var datetime =   jsonresponse.datetime
     var hour = datetime.slice(11,13)
